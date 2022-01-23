@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="body">
+    <div class="buttons_hide">
+        <button id="first_name">Скрыть имя</button> 
+        <button id="last_name">Скрыть фамилию</button>
+        <button id="about">Скрыть описание</button> 
+        <button id="eye_color">Скрыть цвет глаз</button> 
+    </div>
+    <table class="table_sort">
+        <thead class="head">
+            <tr> 
+                <th id="first_name_head" class="table_head">Имя</th> 
+                <th id="last_name_head" class="table_head">Фамилия</th> 
+                <th id="about_head" class="table_head">Описание</th>
+                <th id="eye_color_head" class="table_head">Цвет глаз</th>
+            </tr>  
+        </thead>
+        <tbody class="table_body">
+        </tbody>
+    </table>
+    
+    <div class="pagination_button"></div> 
+    <div class='modal_block'>
+        <div class="modal_dialog">
+            <div class="modal_content">
+                <form action="#" id="form">
+                    <div data-close class="modal_close">&times;</div>
+                    <div class="modal_title">Редактировать ячейку</div>
+                    <input required placeholder="Имя" name="first_name" type="text" class="modal_input firstname">
+                    <input required placeholder="Фамилия" name="last_name" type="text" class="modal_input lastname">
+                    <input required placeholder="Описание" name="about" type="text" class="modal_input about">
+                    <div class="modal_eye_color">
+                        <div class="modal_eye_color_title">Цвет глаз:</div>
+                        <select name="eye_color" size="1">
+                            <option selected value="blue">blue</option>
+                            <option value="brown">brown</option>
+                            <option value="red">red</option>
+                            <option value="green">green</option>
+                        </select>
+                    </div>
+                   
+                    <button class="modal_button" type="submit">Сохранить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
